@@ -91,17 +91,22 @@
                             <a style="color: #ffffff;">コールセンター相談件数(工事中)</a>
                         </h3>
                     </div>
+
                     <div class="container" style="margin-top:3rem"> 
                         <p>
                             <h3>Code for Toyama Cityの新型コロナ対策サイトでは、開発、デザインやご意見を出していただける方を募集しています。</h3>
                         </p>
-                        開発にご協力いただけるかたは、こちらをご覧ください。
+                        開発にご協力いただけるかたは、Githubをご覧ください。
                     </div>
                     <div class="container bg-primary"> 
                         <h3>
                             <a href="https://github.com/codefortoyama/covid19" style="color: #ffffff;">GitHub</a>
                         </h3>
                     </div>
+                    <div class="container" > 
+                    <a href="https://join.slack.com/t/codefortoyama/shared_invite/zt-dnexhi6s-yavCx3dO0YlsBi_BjfechQ" style="color: #000000;">また、こちらからslackに参加できます。</a>
+                    </div> 
+                    
                     <div class="container" style="margin-top:1rem"> 
                         ご意見・ご要望は、Code for Toayma CityのWEBサイトやFacebookページからお願いします。
                     </div>
