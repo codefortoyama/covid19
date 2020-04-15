@@ -13,8 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/opendata', function () {
     return view('top');
 });
-Route::get('/get_patients', 'OpendataController@get_patients');
+Route::get('/opendata/get_patients', 'OpendataController@get_patients');
 

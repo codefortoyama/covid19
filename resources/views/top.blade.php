@@ -49,7 +49,7 @@
                 <div style="margin-top:1rem">
                     <div class="container bg-primary" > 
                         <h3>
-                            <a href={{url('/get_patients')}} style="color: #ffffff;">陽性患者属性情報</a>
+                            <a href={{url('/opendata/get_patients')}} style="color: #ffffff;">陽性患者属性情報</a>
                         </h3>
                     </div>
                     <div class="container-fluid" style="margin-top:1rem">
