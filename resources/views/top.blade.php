@@ -35,7 +35,7 @@
                     富山県オープンデータ(新型コロナウィルス関連)変換データ提供サイト
                     </h2>
                 </div>
-                <div class="container-fluid" style="margin-top:1rem">
+                <div class="container-fluid" style="margin-top:3rem">
                     <h4>
                     このサイトでは、富山県オープンデータサイトに掲載されているオープンデータを、Code for Japanが作成・公開している「新型コロナウイルス感染症対策に関するオープンデータ項目定義書」に準拠した形式で変換したデータを提供しています。
                     </h4>
@@ -91,9 +91,28 @@
                             <a style="color: #ffffff;">コールセンター相談件数(工事中)</a>
                         </h3>
                     </div>
-                    <div class="container bg-warning" > 
+                    <div class="container" style="margin-top:3rem"> 
+                        <p>
+                            <h3>Code for Toyama Cityの新型コロナ対策サイトでは、開発、デザインやご意見を出していただける方を募集しています。</h3>
+                        </p>
+                        開発にご協力いただけるかたは、こちらをご覧ください。
+                    </div>
+                    <div class="container bg-primary"> 
                         <h3>
-                            <a style="color: #ffffff;">GitHub</a>
+                            <a href="https://github.com/codefortoyama/covid19" style="color: #ffffff;">GitHub</a>
+                        </h3>
+                    </div>
+                    <div class="container" style="margin-top:1rem"> 
+                        ご意見・ご要望は、Code for Toayma CityのWEBサイトやFacebookページからお願いします。
+                    </div>
+                    <div class="container bg-primary"> 
+                        <h3>
+                            <a href="https://codefortoyama.jimdofree.com/" style="color: #ffffff;">Code for Toyama City WEBサイト</a>
+                        </h3>
+                    </div>
+                    <div class="container bg-primary"> 
+                        <h3>
+                            <a href="https://www.facebook.com/codefortoyama/" style="color: #ffffff;">Code for Toyama City Facebook ページ</a>
                         </h3>
                     </div>
                 </div>
