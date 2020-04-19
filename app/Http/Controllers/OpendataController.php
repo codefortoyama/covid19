@@ -36,6 +36,7 @@ class OpendataController extends Controller
         }
 
         fclose($fp);
+        unlink($filename);
 
         //  出力用のCSV作成
         $outfilename = tempnam ('./', $this->LocalCSV);
