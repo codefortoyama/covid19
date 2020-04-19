@@ -17,4 +17,6 @@ Route::get('/opendata', function () {
     return view('top');
 });
 Route::get('/opendata/get_patients', 'OpendataController@get_patients');
+Route::get('/opendata/get_inspected', 'ToyamaCountsController@get_inspected');
+
 

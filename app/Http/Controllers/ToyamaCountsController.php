@@ -3,21 +3,21 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Patients;
+use App\CountsInspected;
 
 
-class OpendataController extends Controller
+class ToyamaCountsController extends Controller
 {
-    protected $RemoteCSV = '16000_toyama_covid19_patients.csv';
-    protected $LocalCSV = 'toyama_patients.';
-    protected $OpendataPath = 'http://opendata.pref.toyama.jp/files/covid19/20200403/toyama_patients.csv';
+    protected $RemoteCSV = '16000_toyama_covid19_test_people.csv';
+    protected $LocalCSV = 'toyama_counts.';
+    protected $OpendataPath = 'http://opendata.pref.toyama.jp/files/covid19/20200403/toyama_counts.csv';
 
     /**
-     * 患者属性情報を富山県オープンデータサイトから取得し、
+     * 陽性患者属性以外を富山県オープンデータサイトから取得し、
      * 新型コロナウイルス感染症対策に関するオープンデータ項目定義書に準拠したCSVを作成し
      * ダウンロードする。
      */
-    public function get_patients()
+    public function get_inspected()
     {
         //  県のオープンデータを取得し、一旦、保存する
         $csv = file_get_contents($this->OpendataPath); //ファイルの保存先
@@ -30,9 +30,9 @@ class OpendataController extends Controller
             throw new Exception('Error: Failed to open file (' . $filename . ')');
         }
 
-        $Patients = new Patients();
+        $CountsInspected = new CountsInspected();
         while (($rec = fgetcsv($fp)) != FALSE) {
-            $Patients->push($rec);
+            $CountsInspected->push($rec);
         }
 
         fclose($fp);
@@ -40,7 +40,7 @@ class OpendataController extends Controller
 
         //  出力用のCSV作成
         $outfilename = tempnam ('./', $this->LocalCSV);
-        $length = $Patients->create_file($outfilename);
+        $length = $CountsInspected->create_file($outfilename);
 
         //  ヘッダ部の出力
         $this->output_header($length);
