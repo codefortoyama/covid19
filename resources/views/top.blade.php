@@ -51,6 +51,9 @@
                         <h3>
                             <a href={{url('/opendata/get_patients')}} style="color: #ffffff;">陽性患者属性情報</a>
                         </h3>
+                        <h6>
+                        <a href={{url('/opendata/get_patients')}} style="color: #ffffff;">{{url('/opendata/get_patients')}}</a>
+                        </h6>
                     </div>
                     <div class="container-fluid" style="margin-top:1rem">
                         <h5>
@@ -64,7 +67,7 @@
                             患者_属性については、現状では「入院中」のみ設定されています。このため、このサイトではデータを設定しておりません(退院済フラグに反映しています)。
                         </p>
                         <p>
-                            富山県においては、入院中/退院済の情報は、属性としては提供される可能性は低いと考えられます。
+                            富山県においては、入院中/退院済の情報は、提供されない見通しです。
                         </p>
                         <p>
                             市区町村名は、富山県オープンデータには「富山市」のみ設定されています。
@@ -75,22 +78,78 @@
                         <h3>
                             <a href={{url('/opendata/get_inspected')}} style="color: #ffffff;">検査実施人数</a>
                         </h3>
+                        <h6>
+                        <a href={{url('/opendata/get_inspected')}} style="color: #ffffff;">{{url('/opendata/get_inspected')}}</a>
+                        </h6>
                     </div>
+                    <h5>
+                    <p>
+                        上のリンクから検査実施人数(新型コロナウイルス感染症対策に関するオープンデータ項目定義書準拠)ダウンロードが可能です。呼び出されたタイミングで、富山県のオープンデータサイトから最新データを取得・データ変換します。
+                    </p>
+                    <p>
+                        【注意事項】
+                    </p>
+                    <p>
+                        先頭カラムの年月日は、富山県の場合「結果判明_年月日」としています。
+                    </p>
+                    </h5>
+                    <div class="container bg-primary" > 
+                        <h3>
+                            <a href={{url('/opendata/get_confirm_negative')}} style="color: #ffffff;">陰性確認数</a>
+                        </h3>
+                        <h6>
+                            <a href={{url('/opendata/get_confirm_negative')}} style="color: #ffffff;">{{url('/opendata/get_confirm_negative')}}</a>
+                        </h6>
+                    </div>
+                    <h5>
+                    <p>
+                        上のリンクから陰性確認数(新型コロナウイルス感染症対策に関するオープンデータ項目定義書準拠)ダウンロードが可能です。呼び出されたタイミングで、富山県のオープンデータサイトから最新データを取得・データ変換します。
+                    </p>
+                    </h5>
+
+                    <div class="container bg-primary" > 
+                    <h3>
+                            <a href={{url('/opendata/get_call_center')}} style="color: #ffffff;">コールセンター相談件数(全件)</a>
+                        </h3>
+                        <h6>
+                            <a href={{url('/opendata/get_call_center')}} style="color: #ffffff;">{{url('/opendata/get_call_center')}}</a>
+                        </h6>
+                        <h3>
+                            <a href={{url('/opendata/get_call_center?mode=general')}} style="color: #ffffff;">コールセンター相談件数(一般相談件数のみ)</a>
+                        </h3>
+                        <h6>
+                            <a href={{url('/opendata/get_call_center?mode=general')}} style="color: #ffffff;">{{url('/opendata/get_call_center?mode=general')}}</a>
+                        </h6>
+                        <h3>
+                            <a href={{url('/opendata/get_call_center?mode=return')}} style="color: #ffffff;">コールセンター相談件数(帰国者相談件数のみ)</a>
+                        </h3>
+                        <h6>
+                            <a href={{url('/opendata/get_call_center?mode=return')}} style="color: #ffffff;">{{url('/opendata/get_call_center?mode=return')}}</a>
+                        </h6>
+                    </div>
+                    <h5>
+                    <p>
+                        上のリンクからコールセンター相談件数(新型コロナウイルス感染症対策に関するオープンデータ項目定義書準拠)ダウンロードが可能です。呼び出されたタイミングで、富山県のオープンデータサイトから最新データを取得・データ変換します。
+                    </p>
+                    <p>
+                        【注意事項】
+                    </p>
+                    <p>
+                        富山県では、一般相談と帰国者相談の二つの相談窓口があります。全件、一般相談及び帰国者相談の件数をダウンロードが可能です。
+                    </p>
+                    </h5>
+
                     <div class="container bg-warning" > 
                         <h3>
                             <a style="color: #ffffff;">検査実施件数(工事中)</a>
                         </h3>
                     </div>
-                    <div class="container bg-primary" > 
-                        <h3>
-                            <a href={{url('/opendata/get_confirm_negative')}} style="color: #ffffff;">陰性確認数</a>
-                        </h3>
-                    </div>
-                    <div class="container bg-warning" > 
-                        <h3>
-                            <a style="color: #ffffff;">コールセンター相談件数(工事中)</a>
-                        </h3>
-                    </div>
+                    <h5>
+                    <p>
+                        富山県では、検査人数は公表されていますが、検査件数の公表はされていません。このデータの提供時期は、未定です。
+                    </p>
+
+
 
                     <div class="container" style="margin-top:3rem"> 
                         <p>
