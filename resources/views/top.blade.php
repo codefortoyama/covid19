@@ -71,9 +71,9 @@
                         </p>
                         </h5>
                     </div>
-                    <div class="container bg-warning" > 
+                    <div class="container bg-primary" > 
                         <h3>
-                            <a  style="color: #ffffff;">検査実施人数(工事中)</a>
+                            <a href={{url('/opendata/get_inspected')}} style="color: #ffffff;">検査実施人数</a>
                         </h3>
                     </div>
                     <div class="container bg-warning" > 
