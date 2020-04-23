@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/opendata', function () {
     return view('top');
 });
-Route::get('/opendata/get_patients', 'OpendataController@get_patients');
-Route::get('/opendata/get_inspected', 'ToyamaCountsController@get_inspected');
-Route::get('/opendata/get_confirm_negative', 'ConfirmNegativeController@get_confirm_negative');
-Route::get('/opendata/get_call_center', 'CallCenterController@get_call_center');
+//Route::get('/opendata/get_patients', 'OpendataController@get_patients');
+//Route::get('/opendata/get_inspected', 'ToyamaCountsController@get_inspected');
+//Route::get('/opendata/get_confirm_negative', 'ConfirmNegativeController@get_confirm_negative');
+//Route::get('/opendata/get_call_center', 'CallCenterController@get_call_center');
