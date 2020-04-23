@@ -14,6 +14,15 @@
 
     </head>
     <body>
+    <div class="container">
+        <div class="container-fluid" style="margin-top:1rem">
+            <h2> 
+            <p>富山県オープンデータ(新型コロナウィルス関連)変換データ提供サイト</p>
+            <p class="text-danger">ただいま調整中です。</p>        
+            </h2>
+        </div>
+    </div>
+    <!--
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -183,4 +192,5 @@
             </div>
         </div>
     </body>
+    -->
 </html>
